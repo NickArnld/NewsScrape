@@ -1,0 +1,33 @@
+.jumbotron{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 0px;
+    background: rgba(91, 121, 255, 0.746);
+    
+}
+
+#newsFeed{
+    margin: auto;
+    background: rgba(90, 176, 247, 0.692);
+    padding: 20px 0px;
+}
+
+.newsPost{
+    margin: auto;
+    width: 80%;
+    background: whitesmoke;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-style: double;
+    border-color: black;
+    text-align: center; 
+}
+
+.headLine{
+    color: rgb(32, 32, 32);
+    padding: 2.5px;
+}
+
+.noteB{
+    padding: 2px;
+}
