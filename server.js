@@ -16,9 +16,9 @@ app.use(express.static("public"));
 
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true});
+mongoose.connect(MONGODB_URI);
 
-app.get('/scrape', function(req, res){
+app.get('/', function(req, res){
 
     //scraping
     var url = "https://old.reddit.com/r/worldnews/top/"
@@ -64,10 +64,10 @@ app.get('/scrape', function(req, res){
         .then( articles => res.send(articles))
 });
 
-app.get('/notes/:id', function(req, res){
-    db.Headline.find({_id: req.params.id})
-        .then(HL => console.log(HL)) 
-})
+// app.get('/notes/:id', function(req, res){
+//     db.Headline.find({_id: req.params.id})
+//         .then(HL => console.log(HL)) 
+// })
 
 
 app.listen(PORT, function() {

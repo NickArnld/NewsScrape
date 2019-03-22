@@ -24,11 +24,11 @@ $.getJSON("/scrape", function(data){
     $('.noteB').on("click", function(event){
         var dbID = $(this).attr("dbID")
         
-        $.ajax({
-            method: "GET",
-            url: "/notes/" + dbID
-        }).then(function(data){
-            //post notes
-        })
+        // $.ajax({
+        //     method: "GET",
+        //     url: "/notes/" + dbID
+        // }).then(function(data){
+        //     //post notes
+        // })
     })
 })
