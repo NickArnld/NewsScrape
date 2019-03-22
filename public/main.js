@@ -1,6 +1,6 @@
 
 
-$.getJSON("/scrape", function(data){
+$.getJSON("/", function(data){
     // console.log("data",data);
 
     for(z in data){
